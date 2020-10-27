@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{Code} 			%	FORM - Code
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%	Bash
+\lstdefinestyle{bsh}{ 
+    language=bash,               
+    frame=tb,
+    aboveskip=3mm,
+    belowskip=3mm,
+    showstringspaces=false,
+    columns=flexible,
+    basicstyle={\small\ttfamily},
+    numbers=left,
+    numberstyle=\tiny\color{black},
+    commentstyle=\color{darkgreen},
+    keywordstyle=\color{black},
+    keywordstyle = [2]{\color{red}},
+    keywordstyle = [3]{\color{blue}},
+    deletekeywords = {export, wait, >, &},
+    otherkeywords = {>, &},
+    morekeywords = [2]{export, >, &},
+    morekeywords = [3]{wait},
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=3,
+}
+
+%	GNU
+\lstdefinestyle{gnu}{ 
+    language=gnuplot,               
+    frame=tb,
+    aboveskip=3mm,
+    belowskip=3mm,
+    showstringspaces=false,
+    columns=flexible,
+    basicstyle={\small\ttfamily},
+    numbers=left,
+    numberstyle=\tiny\color{black},
+    commentstyle=\color{darkgreen},
+    keywordstyle=\color{black},
+    keywordstyle = [2]{\color{red}},
+    keywordstyle = [3]{\color{blue}},
+    deletekeywords = {set, fit, plot, using, with, FIT_LIMIT},
+    otherkeywords = {>, &},
+    morekeywords = [2]{set, fit, plot, using, with, FIT_LIMIT},
+    morekeywords = [3]{key, xlabel, ylabel, logscale, xrange, yrange, datafile seperator, style, term},
+    breaklines=true,
+    breakatwhitespace=true,
+    tabsize=3,
+}
+
+
+%	Python
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__, rminimum, phase1, phase2, phase3, phase4},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}

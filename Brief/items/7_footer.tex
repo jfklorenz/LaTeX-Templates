@@ -1,0 +1,95 @@
+% INPUT / Private
+  % Name
+  \node[thick, align=left, text width=8cm] at (9.25, 4.25) {Julian Lorenz};
+
+  % Telefon
+  \node[thick, align=left, text width=8cm] at (9.25, 3.75) {+49 69 717 38 719};
+
+  % Handy
+  \node[thick, align=left, text width=8cm] at (9.25, 3.25) {+49 170 180 7175};
+
+  % E-Mail
+  \node[thick, align=left, text width=8cm] at (9.25, 2.75) {\href{mailto:jfk.lorenz@gmail.com}{jfk.lorenz@gmail.com}};
+
+  % Address / Street
+  \node[thick, align=left, text width=8cm] at (9.25, 2.25) {Gabelsbergerstrasse 2};
+
+  % Address / Place
+  \node[thick, align=left, text width=8cm] at (9.25, 1.75) {60389, Frankfurt am Main};
+
+% INPUT / Bank
+  % Name
+  \node[thick, align=left, text width=8cm] at (18, 4.25) {Julian Lorenz};
+
+  % Bank
+  \node[thick, align=left, text width=8cm] at (18, 3.75) {Frankfurter Sparkasse};
+
+  % BLZ
+  \node[thick, align=left, text width=8cm] at (18, 3.25) {5005 0201};
+
+  % Konto
+  \node[thick, align=left, text width=8cm] at (18, 2.75) {1201 6610 89};
+
+  % IBAN
+  \node[thick, align=left, text width=8cm] at (18, 2.25) {DE69 5005 0201 1201 6610 89};
+
+  % BIC
+  %\node[thick, align=left, text width=8cm] at (18, 1.75) {};
+
+% ================
+% Automatic
+
+% Name
+\node[thick, align=left, text width=2cm] at (4.5, 4.25) {Name:};
+\node[thick, align=left, text width=1cm] at (3.25, 4.25) {\Gentsroom};
+
+% Telefon
+
+\node[thick, align=left, text width=2cm] at (4.5, 3.75) {Telefon:};
+\node[thick, align=left, text width=1cm] at (3.25, 3.75) {\Telefon};
+
+% Handy
+\node[thick, align=left, text width=2cm] at (4.5, 3.25) {Handy:};
+\node[thick, align=left, text width=1cm] at (3.25, 3.25) {\Mobilefone};
+
+% E-Mail
+\node[thick, align=left, text width=2cm] at (4.5, 2.75) {E-Mail:};
+\node[thick, align=left, text width=1cm] at (3.25, 2.75) {\Letter};
+
+% Address / Street
+\node[thick, align=left, text width=2cm] at (4.5, 2.25) {Adresse:};
+
+% Address / Place
+\node[thick, align=left, text width=2cm] at (4.5, 1.75) {Ort:};
+
+% Name
+\node[thick, align=left, text width=1cm] at (13, 4.25) {Name:};
+
+% Bank
+\node[thick, align=left, text width=1cm] at (13, 3.75) {Bank:};
+
+% BLZ
+\node[thick, align=left, text width=1cm] at (13, 3.25) {BLZ:};
+
+% Konto
+\node[thick, align=left, text width=1cm] at (13, 2.75) {Konto:};
+
+% IBAN
+\node[thick, align=left, text width=1cm] at (13, 2.25) {IBAN:};
+
+% BIC
+%\node[thick, align=left, text width=1cm] at (13, 1.75) {BIC:};
+
+% Border
+% Border / Bottom
+\foreach \x in {0, 0.2}
+  \draw[thick] (1.5, 5.5 + \x) -- (19.5, 5.5 + \x);
+
+% Border / Bottom / Center
+  \draw[thick] (10.5, 0.5) -- (10.5, 5);
+
+% Headline
+\node[thick, align=left] at (15, 5) {\textbf{Bankverbindung:}};
+\draw[thick] (11.25, 4.65) -- (18.75, 4.65);
+\node[thick, align=left] at (6, 5) {\textbf{Person:}};
+\draw[thick] (2.25, 4.65) -- (9.75, 4.65);

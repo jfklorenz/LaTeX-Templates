@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{Packages}	%	Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Font / Script
+\RequirePackage[utf8]{inputenc} 		%	Umlaute
+\RequirePackage[T1]{fontenc}			%	Standardschrift, Trennung
+\RequirePackage{xspace}					%	Leerzeichen
+\RequirePackage{pifont}
+\RequirePackage{kpfonts}
+\RequirePackage{calligra}
+\RequirePackage[ngerman]{babel}
+\RequirePackage{ifthen}
+\RequirePackage[table]{xcolor}
+\RequirePackage{pdflscape}
+\RequirePackage{afterpage}
+\RequirePackage{capt-of}
+\RequirePackage{float}
+\RequirePackage{bbm}
+\RequirePackage{dashrule}
+\RequirePackage{url}
+\RequirePackage{caption}
+\RequirePackage{fontawesome}
+\RequirePackage{multirow}
+\RequirePackage{pdfpages}
+
+
+%-------------------------------------------------------------
+%	Math
+\RequirePackage{amssymb,amsmath, amsthm}		%	Math Mode Enhancement
+\RequirePackage{array}
+\RequirePackage{marvosym}				%	Euro Symbol and others
+\RequirePackage{multicol}
+\RequirePackage[linesnumbered,ruled,vlined,noend]{algorithm2e}
+\SetKwIF{If}{ElseIf}{Else}{if}{:}{else if}{else:}{end if}%
+\SetKwFor{While}{while}{:}{end while}%
+\SetKwFor{For}{for}{:}{end for}
+\SetKwRepeat{Do}{do}{while}
+\SetKw{KwGoTo}{go to}
+
+\RequirePackage{thmtools}
+\RequirePackage{smartdiagram}
+\RequirePackage{listings}
+\RequirePackage{braket}
+% Commands defined are:
+% \bra{ }   \ket{ }   \braket{ }   \set{ }    (small versions)
+% \Bra{ }   \Ket{ }   \Braket{ }   \Set{ }    (expanding versions)
+
+\RequirePackage{xstring}
+%\RequirePackage{wasysym}
+
+%-------------------------------------------------------------
+%	Time
+\RequirePackage[yyyymmdd]{datetime}
+
+%-------------------------------------------------------------
+%	Box / Tabular
+%\RequirePackage{tabularx}
+%\RequirePackage[many]{tcolorbox}		%	Farbliche Boxen
+%\RequirePackage{thmbox}
+\RequirePackage{arydshln}				%	Dash Lines
+
+%-------------------------------------------------------------
+%	References
+\RequirePackage{hyperref}				%	Hyperref
+\hypersetup{
+    colorlinks,
+    linkcolor={blue!60!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!60!black}
+}
+\RequirePackage{booktabs}
+
+%-------------------------------------------------------------
+%	Graphic
+\PassOptionsToPackage{demo}{graphicx}
+\RequirePackage{keyval}
+\RequirePackage[scale=2]{ccicons}		%	Creative Common Icons
+
+%\RequirePackage{colortbl}
+
+%-------------------------------------------------------------
+%	Layout
+\RequirePackage[a4paper]{geometry}		%	Layout
+\RequirePackage{fancyhdr}				%	Fancy Header
+\RequirePackage{lastpage}				%	Last Past Options
+
+%-------------------------------------------------------------
+%	Tikz
+\RequirePackage{tikz}
+\usetikzlibrary{calc, positioning, shapes, through, intersections, arrows.meta, shadows,backgrounds, decorations.pathreplacing,patterns}
+\RequirePackage{forest}
+
+%-------------------------------------------------------------
+%	Cls Maker
+\RequirePackage{xparse}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

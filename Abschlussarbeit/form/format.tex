@@ -1,0 +1,39 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{Format} 			%	FORM - FORMAT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\label{Seitenlayout}
+%%% Seitenränder anpassen
+\setlength{\topskip}{\ht\strutbox} 					% behebt Warnung von geometry
+\setlength{\headheight}{1.1\baselineskip}   		% Headheight hochsetzten
+\geometry{paper=a4paper,
+left=25mm,											% Seitenabstand Links
+right=15mm,											% Seitenabstand Rechts
+top=25mm,											% Seitenabstand Oben
+bottom=25mm} 										% Seitenabstand Unten
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	New Theorems
+\newtheorem{manualtheoreminner}{Theorem}
+\newenvironment{manualtheorem}[1]{%
+  \renewcommand\themanualtheoreminner{#1}%
+  \manualtheoreminner
+}{\endmanualtheoreminner}
+
+\newtheorem{manuallemmainner}{Lemma}
+\newenvironment{manuallemma}[1]{%
+  \renewcommand\themanuallemmainner{#1}%
+  \manuallemmainner
+}{\endmanuallemmainner}
+
+\newtheorem{manualcorollaryinner}{Korollar}
+\newenvironment{manualcorollary}[1]{%
+  \renewcommand\themanualcorollaryinner{#1}%
+  \manualcorollaryinner
+}{\endmanualcorollaryinner}
+
+\newtheorem{manualdefinitioninner}{Definition}
+\newenvironment{manualdefinition}[1]{%
+  \renewcommand\themanualdefinitioninner{#1}%
+  \manualdefinitioninner
+}{\endmanualdefinitioninner}

@@ -1,0 +1,26 @@
+\documentclass[a4paper]{article}
+\usepackage[top=0cm, bottom=0cm, left=0cm, right=0cm]{geometry}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{marvosym}
+\usepackage[utf8]{inputenc}
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{decorations.pathreplacing, positioning}
+
+\begin{document}
+\noindent
+  \begin{tikzpicture}[scale=1]
+    \input{items/0_background}
+    \input{items/1_headline}
+    \input{items/2_window}
+    \input{items/3_address}
+    \input{items/4_box}
+    \input{items/5_text}
+    \input{items/6_mfg}
+    \input{items/7_footer}
+    \input{items/8_marker}
+  \end{tikzpicture}
+\end{document}

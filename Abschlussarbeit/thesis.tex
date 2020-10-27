@@ -1,0 +1,40 @@
+\documentclass[12pt,a4paper,titlepage,xcolor=dvipsnames,bibliography=totoc, listof=totoc]{scrartcl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{Preamble}			%	Preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Packages:		form/packages
+\include{form/packages}
+
+%	Colors:			form/colors
+\include{form/colors}
+
+%	Format:			form/format
+\include{form/format}
+
+%	Header:			form/header
+\include{form/header}
+
+%	New Commands:	form/newcommands
+\include{form/newcommands}
+
+%	Fancy Section:	form/fancysection
+\include{form/fancysection}
+
+%	Code Style:		form/code
+\include{form/code}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}\label{Begin Document}		%	Begin Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%lge%%%%%%%%%%%%%%
+\include{pages/title}\label{Titlepage}	%	Titlepage
+\cleardoublepage\pdfbookmark{\contentsname}{toc}\tableofcontents
+\newpage \label{Table of Contents}		%	Table of Contents
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Intro
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}\label{End Document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

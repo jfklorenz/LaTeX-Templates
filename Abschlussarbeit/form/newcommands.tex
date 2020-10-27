@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{New Commands}	%	NEW COMMANDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{New Commands : Basic}
+%	Array Stretch
+\renewcommand{\arraystretch}{1.3}
+
+%	Other
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+
+%	Definition, Theorem, Korollar, Lemma
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Text
+\label{New Commands : Rules}
+\newcommand{\myRule}[3][black]{\textcolor{#1}{\rule[2mm]{#2}{#3}}}
+\renewcommand{\dateseparator}{ -- }
+\newcommand{\nth}[1]{\begin{large}\textbf{#1}\end{large}\newline\noindent\myRule[gray]{\textwidth}{1pt}}
+
+\label{New Commands : Spaces}
+\newcommand{\va}{\vspace*{.1cm}}
+\newcommand{\vb}{\vspace*{.2cm}}
+\newcommand{\vc}{\vspace*{.3cm}}
+\newcommand{\vd}{\vspace*{.5cm}}
+\newcommand{\np}{\newpage}
+
+\newcommand{\cm}{\textcolor{greengreen}{\text{\ding{51}}}}	% Green Checkmark
+\newcommand{\xm}{\textcolor{red}{\text{\ding{55}}}}	% Red Xmark
+
+\label{New Commands : Tabular}
+\newcommand{\cca}{{\cellcolor{gray2!40!white}}}			% Subtitle
+\newcommand{\ccb}{{\cellcolor{gray2!60!white}}}			% Title
+\newcommand{\ccbb}{{\cellcolor{gray2}}}			% Title
+\newcommand{\ccg}{{\cellcolor{greengreen!60!white}}}	% Positive Green
+\newcommand{\ccr}{{\cellcolor{redred!60!white}}}		% Negative Red
+\newcommand{\ccz}[1]{{\cellcolor{#1}}}					% Input
+\newcommand{\tc}[2]{\begin{center}\begin{tabular}{#1}#2\end{tabular}\end{center}}	% centered tabular
+
+\newcommand{\mMp}[1]{\begin{pmatrix} #1\end{pmatrix}}
+\newcommand{\mMs}[1]{\bigl(\begin{smallmatrix} #1\end{smallmatrix}\bigr)}
+
+\label{New Commands : Comments}
+\newcommand{\ccc}[1]{}
+\newcommand{\cccq}[1]{\textit{#1} }
+\newcommand{\cccp}[1]{\textbf{#1} }
+\newcommand{\cccz}[1]{\noindent\textbf{Zusammenfassung/Fragen:}\\ \noindent\texttt{#1}\\[.2cm]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\label{New Commands : Bachelor-Thesis}
+%	Text
+
+\newcommand{\bb}{\textit{BridgeBuddy} }
+\newcommand{\bbm}{\textit{BridgeMate} }
+
+\newcommand{\tl}{\textit{Turnierleiter} }
+\newcommand{\qr}{\textit{QR-Code} }
+
+\newcommand{\dbv}{\textit{Deutscher Bridge-Verband} }
+\newcommand{\dbvs}{\textit{Deutschen Bridge-Verbandes} }
+\newcommand{\dbvn}{\textit{DBV-Nummer} }
+\newcommand{\dbvns}{\textit{DBV-Nummern} }
+
+\newcommand{\ns}{\textit{Nord-Süd} }
+\newcommand{\ew}{\textit{Ost-West} }
+
+\newcommand{\even}{\textit{gerade} }
+\newcommand{\evens}{\textit{geraden} }
+\newcommand{\odd}{\textit{ungerade} }
+\newcommand{\odds}{\textit{ungeraden} }
+
+\newcommand{\bc}{\textit{Bridge-Club} }
+\newcommand{\bcs}{\textit{Bridge-Clubs} }
+
+\newcommand{\cp}{\textit{Club Punkt} }
+\newcommand{\cps}{\textit{Club Punkte} }
+
+\newcommand{\dds}{\textit{Double Dummy Solver} }
+
+\newcommand{\bg}{\textit{Board Gruppe} }
+\newcommand{\bgs}{\textit{Board Gruppen} }
+
+\newcommand{\bm}{\textit{Movement} }
+\newcommand{\bms}{\textit{Movements} }
+
+\newcommand{\ser}{\textit{Server}}
+\newcommand{\cli}{\textit{Client}}
+
+\newcommand{\di}{\textit{Verteilung} }
+\newcommand{\dis}{\textit{Verteilungen} }
+
+\newcommand{\bo}{\textit{Board} }
+\newcommand{\bos}{\textit{Boards} }
+
+\newcommand{\ti}{\textit{Tisch} }
+\newcommand{\tis}{\textit{Tische} }
+
+\newcommand{\pa}{\textit{Paar} }
+\newcommand{\pas}{\textit{Paare} }
+
+\newcommand{\ru}{\textit{Runde} }
+\newcommand{\rus}{\textit{Runden} }
+
+\newcommand{\te}{\textit{Team} }
+\newcommand{\tes}{\textit{Teams} }
+
+\newcommand{\lk}{\textit{Laufkarte} }
+\newcommand{\lks}{\textit{Laufkarten} }
+
+\newcommand{\bw}{\textit{Butlerwertung} }
+\newcommand{\bws}{\textit{Butlerwertungs} }
+
+\newcommand{\scy}{\textit{Score} }
+\newcommand{\scs}{\textit{Scores} }
+
+\newcommand{\mpy}{\textit{Matchpoint} }
+\newcommand{\mps}{\textit{Matchpoints} }
+
+\newcommand{\imp}{\textit{IMP} }
+\newcommand{\imps}{\textit{IMPs} }
+
+\newcommand{\vp}{\textit{Victory Point} }
+\newcommand{\vps}{\textit{Victory Points} }
+
+\newcommand{\pf}{\textit{Figurenpunkt} }
+\newcommand{\pfs}{\textit{Figurenpunkte} }
+
+\newcommand{\pv}{\textit{Verteilungspunkt} }
+\newcommand{\pvs}{\textit{Verteilungspunkte} }
+
+%	Complex Formula
+\newcommand{\fgpair}{$\langle \mathbb{E}[f_{min}(n)],\max \mathbb{E}[f_{rem}(n)]\rangle$ }
+\newcommand{\elog}{\varepsilon^{-1}\log(\log(n))}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
