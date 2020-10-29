@@ -4,7 +4,7 @@
  
 A collection of LaTeX templates and designs.
 
-Name | Content
+Folder | Content
 --- | ---
 Abgabe | Template: University exercises
 Abschlussarbeit | Template: thesis (Bachelor/Master)
