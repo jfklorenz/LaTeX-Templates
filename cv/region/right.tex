@@ -1,0 +1,74 @@
+% RIGHT SIDE ===================================
+% RIGHT first
+\foreach \y in {22}{
+  \draw[myBlack] (8, \y - 1) rectangle (20, \y);
+  \draw[myBlack] (7.65, \y - 1) rectangle (7.85, \y);
+  \node[anchor=west, color=white] at (8.5, \y - 0.5) {\Large \textsc{Education}}; % INPUT
+
+  \draw[myBlack, very thick] (7.75, \y - 2) -- (7.75, \y - 6.5);
+  \draw[colorDark, fill=black!80] (7.75, \y-2) circle (0.1cm);
+  \draw[colorDark, fill=black!80] (7.75, \y-3.5) circle (0.1cm);
+  \draw[colorDark, fill=black!80] (7.75, \y-5) circle (0.1cm);
+  \draw[colorDark, fill=black!80] (7.75, \y-6.5) circle (0.1cm);
+
+  \draw[myGray] (8, \y-1.5) rectangle (19, \y-2.5);
+  \node[anchor=west, thick] at (8.5, \y-1.75) {\textbf{High School (Abitur)}}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y-2.25) {\textsl{2006 $|$ Lessing Gymnasium $|$ Frankfurt am Main}}; % INPUT
+
+  \draw[myGray] (8, \y-3) rectangle (19, \y-4);
+  \node[anchor=west, thick] at (8.5, \y-3.25) {\textbf{Bachelor of Science: Mathematics ($\varnothing$2.3)}}; % INPUT \diameter
+  \node[anchor=west, thick] at (8.5, \y-3.75) {\textsl{2006 - 2012 $|$ Goethe University $|$ Frankfurt am Main}}; % INPUT
+
+  \draw[myGray] (8, \y - 4.5) rectangle (19, \y - 5.5);
+  \node[anchor=west, thick] at (8.5, \y-4.75) {\textbf{Bachelor of Science: Computer Science ($\varnothing$1.6)}}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y-5.25) {\textsl{2012 - 2020 $|$ Goethe University $|$ Frankfurt am Main}}; % INPUT
+
+  \draw[myGray] (8, \y-6) rectangle (19, \y-7);
+  \node[anchor=west, thick] at (8.5, \y-6.25) {\textbf{Master of Science: Computer Science ($\varnothing$...)}}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y-6.75) {\textsl{2020 - 2021 $|$ Goethe University $|$ Frankfurt am Main}}; % INPUT
+}
+% RIGHT EXPERIENCE ===
+\foreach \y in {14}{
+  \draw[myBlack] (8, \y ) rectangle (20, \y - 1);
+  \draw[myBlack] (7.65, \y) rectangle (7.85, \y - 1);
+  \node[anchor=west, color=white] at (8.5, \y - 0.5) {\Large \textsc{Experiences}}; % INPUT
+
+  \draw[colorDark, fill=black!80] (7.75, \y - 2) circle (0.1cm);
+  \draw[colorDark, fill=black!80] (7.75, \y - 3.5) circle (0.1cm);
+  \draw[colorDark, fill=black!80] (7.75, \y - 5) circle (0.1cm);
+
+  \draw[myGray] (8, \y - 2.5) rectangle (19, \y - 1.5);
+  \node[anchor=west, thick] at (8.5, \y - 1.75) {\textbf{Lernzentrum Informatik}}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y - 2.25) {\textsl{2014 - 2021 $|$ Tutoring for a variety of subjects}}; % INPUT
+
+  \draw[myGray] (8, \y - 4) rectangle (19, \y - 3);
+  \node[anchor=west, thick] at (8.5, \y - 3.25) {\textbf{Teaching Cooperation}}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y - 3.75) {\textsl{2017 - 2018 $|$ Cooperation between university and several schools}}; % INPUT
+
+  \draw[myGray] (8, \y - 5.5) rectangle (19, \y - 4.5);
+  \node[anchor=west, thick] at (8.5, \y - 4.75) {\textbf{Freelance Work}}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y - 5.25) {\textsl{Data analysis $|$ Project planning $|$ Playing cards}}; % INPUT
+}
+
+% ACTIVITIS
+\foreach \y in {7.5}{
+  \draw[myBlack] (8, \y ) rectangle (20, \y - 1);
+  \draw[myBlack] (7.65, \y) rectangle (7.85, \y - 1);
+  \node[anchor=west, color=white] at (8.5, \y - 0.5) {\Large \textsc{Other Activities}}; % INPUT
+
+  \draw[colorDark, fill=black!80] (7.75, \y - 2) circle (0.1cm);
+  \draw[colorDark, fill=black!80] (7.75, \y - 3.5) circle (0.1cm);
+  \draw[colorDark, fill=black!80] (7.75, \y - 5) circle (0.1cm);
+
+  \draw[myGray] (8, \y - 2.5) rectangle (19, \y - 1.5);
+  \node[anchor=west, thick] at (8.5, \y - 1.75) {\textbf{Contract Bridge }}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y - 2.25) {\textsl{Regional \& National $|$ Former board member of \href{https://www.ftbc58.de/}{ftbc58}}}; % INPUT
+
+  \draw[myGray] (8, \y - 4) rectangle (19, \y - 3);
+  \node[anchor=west, thick] at (8.5, \y - 3.25) {\textbf{Poker}}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y - 3.75) {\textsl{2010 - 2020 $|$ Regional \& National}}; % INPUT
+
+  \draw[myGray] (8, \y - 5.5) rectangle (19, \y - 4.5);
+  \node[anchor=west, thick] at (8.5, \y - 4.75) {\textbf{Music \& Sport}}; % INPUT
+  \node[anchor=west, thick] at (8.5, \y - 5.25) {\textsl{Cello, Synthesizer $|$ Tennis, Tabletennis, Sqash, E-Sport}}; % INPUT
+}

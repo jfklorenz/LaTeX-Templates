@@ -1,0 +1,20 @@
+% Margin
+\draw (0,0) rectangle (21, 29.7);
+%\draw (-0.2,-0.2) rectangle (21.2, 29.9);                                      % Frame
+
+% Top Side
+\draw[myDark] (0, 29.7) rectangle (21, 23.2);                                   % Backround
+\draw[color= white, thick] (7.95, 23.95) rectangle (20.05, 28.05);              % White Box
+\draw[color= white, thick] (8.05, 24.05) rectangle (19.95, 27.95);              % White Box 2
+\draw[color=white, fill=black!80, thick] (14, 28) circle (1cm);            % White Circle
+\node[color=white, thick] at (14, 28) {\Huge CV};                               % Text: CV
+\node[anchor=west, color=white, thick] at (8.5, 26) {\Huge \textsc{J u l i a n}};                    % INPUT: First Name
+\node[anchor=east, color=white, very thick] at (19.5, 26) {\Huge \textsc{\textbf{L O R E N Z}}};     % INPUT: Last Name
+\node[color=white, thick] at (14, 25) {\Large Mathematics \& Computer Science};                      % INPUT: Subject
+
+% Lines: Horizontal
+\draw[colorGray, thick] (0, 1) -- (21, 1);
+\draw[colorGray, thick] (0, 23) -- (21, 23);
+
+% Bottom Quote
+\node[colorBlack, thick] at (10.5, 0.5) {\large \textit{"When you're the smartest person in the room, you're in the wrong room."}};
