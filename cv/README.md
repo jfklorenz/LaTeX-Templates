@@ -1,7 +1,5 @@
 # Curriculum-Vitae
 
-![GitHub top language](https://img.shields.io/github/languages/top/jfklorenz/Curriculum-Vitae) ![GitHub](https://img.shields.io/github/license/jfklorenz/Curriculum-Vitae)
-
 **LaTeX** template for a **curriculum vitae**. 
 
 For usage advanced skills are recommended.
