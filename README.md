@@ -2,7 +2,7 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/jfklorenz/LaTeX) ![GitHub](https://img.shields.io/github/license/jfklorenz/LaTeX)
  
-A collection of LaTeX templates.
+A collection of LaTeX templates and designs.
 
 Name | Content
 --- | ---
